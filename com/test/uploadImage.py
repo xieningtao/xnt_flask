@@ -35,4 +35,4 @@ def upload_file():
             myRespnse.data =  json.dumps({"code":"-101","msg":"只支持png,jpg,jpeg格式图片"})
         return myRespnse
 if __name__ == '__main__':
-    app.run(threaded=True)
+    app.run(port= 8090,threaded=True)
